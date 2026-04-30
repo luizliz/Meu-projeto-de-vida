@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>🎯 4 Cantos | Meus Objetivos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="particleCanvas"></canvas>
+
+  <h1 class="main-title"> Meus Objetivos </h1>
+
+  <div id="iconTopLeft" class="corner-icon top-left" data-goal="carro">
+    <span class="icon-emoji">🚗</span>
+    <span class="icon-label">Comprar carro</span>
+  </div>
+  <div id="iconTopRight" class="corner-icon top-right" data-goal="faculdade">
+    <span class="icon-emoji">🎓</span>
+    <span class="icon-label">Formar faculdade</span>
+  </div>
+  <div id="iconBottomLeft" class="corner-icon bottom-left" data-goal="casa">
+    <span class="icon-emoji">🏡</span>
+    <span class="icon-label">Casa própria</span>
+  </div>
+  <div id="iconBottomRight" class="corner-icon bottom-right" data-goal="pai">
+    <span class="icon-emoji">👶</span>
+    <span class="icon-label">Ser pai</span>
+  </div>
+
+  <div id="goalModal" class="goal-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-emoji" id="modalEmoji">🚗</span>
+        <h2 id="modalTitle">Comprar um carro</h2>
+        <button class="modal-close" id="closeModalBtn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="deadline" id="modalDeadline"></div>
+        <div class="timer-panel" id="modalTimer"></div>
+        <div class="explanation">
+          <div class="reason-box">
+            <strong>⏱️ Por que este prazo?</strong>
+            <p id="reasonTime"></p>
+          </div>
+          <div class="reason-box">
+            <strong>💭 Por que este objetivo?</strong>
+            <p id="reasonWhy"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
